@@ -15,7 +15,7 @@ ENV TERM linux
 ARG AIRFLOW_VERSION=1.10.9
 ARG AIRFLOW_USER_HOME=/usr/local/airflow
 ARG AIRFLOW_DEPS="kubernetes,gcp,google_auth,slack,sentry"
-ARG PYTHON_DEPS=""
+ARG PYTHON_DEPS="airflow-prometheus-exporter"
 ENV AIRFLOW_HOME=${AIRFLOW_USER_HOME}
 
 # Define en_US.
