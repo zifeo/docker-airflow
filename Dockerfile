@@ -12,10 +12,10 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TERM linux
 
 # Airflow
-ARG AIRFLOW_VERSION=1.10.9
+ARG AIRFLOW_VERSION=1.10.10
 ARG AIRFLOW_USER_HOME=/usr/local/airflow
 ARG AIRFLOW_DEPS="kubernetes,gcp,google_auth,slack,sentry"
-ARG PYTHON_DEPS="airflow-prometheus-exporter SQLAlchemy==1.3.15"
+ARG PYTHON_DEPS="airflow-prometheus-exporter"
 ENV AIRFLOW_HOME=${AIRFLOW_USER_HOME}
 
 # Define en_US.
